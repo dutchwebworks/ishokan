@@ -1,0 +1,54 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Nav from "@/components/Nav.astro";
+
+import { SITE_TITLE, AUTHOR } from '@/consts';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>{SITE_TITLE} {title}</title>
+
+		<meta name="generator" content={Astro.generator} />
+		
+		<meta name="author" content={AUTHOR} />
+
+		<meta name="description" content="" />
+
+		<meta name="copyright" content="&copy; Ishokan 2014" />
+		
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lilita+One%7COpen+Sans%3A400%2C400italic%2C600&#038;ver=4.8.1' type='text/css' media='screen' />
+
+		<link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	<body>		
+			<Header />
+
+			<Nav />
+
+			<div class="mainContentWrapper">
+				<div class="mainContent siteWidth">
+					<slot />
+				</div>
+			</div>
+
+			<Footer />
+	</body>
+</html>
+
+<style is:global>
+
+</style>
