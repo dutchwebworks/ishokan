@@ -1,0 +1,123 @@
+/*
+Theme Name: 	Starkers Ishokan.org
+Theme URI: 		http://viewportindustries.com/products/starkers
+Description: 	Print styles
+Version: 		1.0
+Author: 		Dennis Burger
+Author URI: 	http://dutchwebworks.nl
+Tags: 			ishokan, aikido, starkers, print
+*/
+body {
+  margin: 20px;
+}
+
+body,
+th,
+td,
+div,
+li {
+  font-family: Verdana, sans-serif;
+  font-size: 12pt;
+  line-height: normal;
+}
+
+h1, h2, h3, h5, h6 {
+  font-family: Georgia, serif;
+  color: #e46d0a;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 12pt;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 12pt;
+}
+
+a {
+  color: #e46d0a;
+}
+
+a img {
+  border: 0;
+}
+
+/* HTML 5 stuff
+================================================ */
+div,
+article,
+section,
+header,
+footer,
+nav,
+li {
+  position: relative;
+  /* For absolutely positioning elements within containers (add more to the list if need be) */
+}
+
+.group:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  /* For clearing */
+}
+
+body {
+  background: #fff;
+  /* Don't forget to style your body to avoid user overrides */
+}
+
+/* Header
+================================================ */
+.navWrapper .siteWidth {
+  text-align: center;
+}
+.navWrapper ul {
+  display: none;
+}
+
+.mainContent h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gridRow {
+  overflow: hidden;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #aaa;
+}
+
+footer p {
+  text-align: center;
+  color: #666;
+}
+
+div[class*="grid_"] {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+div[style] {
+  top: 0 !important;
+}
