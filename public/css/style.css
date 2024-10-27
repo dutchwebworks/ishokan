@@ -298,7 +298,7 @@ td {
 	vertical-align: top;
 }
 
-/* 12 columns grid system
+/* Video grid
 ==================================== */
 
 .videoGrid {
@@ -306,6 +306,9 @@ td {
 	gap: 22px;
 	grid-template-columns: 1fr 1fr;
 }
+
+/* Old banner at the top
+==================================== */
 
 .old-banner {
 	position: fixed;
