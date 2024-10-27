@@ -5,7 +5,7 @@ import Layout from '@/layouts/Layout.astro';
 	<section class="gridContainer_12 callToAction">
 		<div class="gridRow">
 			<div class="grid_prefix_1">
-				<article role="main">
+				<main>
 					<h1>Welkom bij ISHOKAN foundation</h1>
 
 					<div class="gridRow">
@@ -69,38 +69,27 @@ import Layout from '@/layouts/Layout.astro';
 
 						<p>&nbsp;</p>
 
-						<table cellspacing="0" width="100%">
-							<tbody>
-								<tr>
-									<td>
-										<h3>Winter / Fuyu</h3>
-										<iframe width="320" height="179"
-											src="//www.youtube.com/embed/IT3KJ3CDKxs" loading="lazy"
-											allowfullscreen></iframe>
-									</td>
-									<td>
-										<h3>Lente / Haru</h3>
-										<iframe width="320" height="179"
-											src="//www.youtube.com/embed/zxWi7VjilxQ" loading="lazy"
-											allowfullscreen></iframe>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h3>Zomer / Natsu</h3>
-										<iframe width="320" height="179"
-											src="//www.youtube.com/embed/xiTG1WpqLdc" loading="lazy"
-											allowfullscreen></iframe>
-									</td>
-									<td>
-										<h3>Herfst / Aki</h3>
-										<iframe width="320" height="179"
-											src="//www.youtube.com/embed/YpFp8NuXOdc" loading="lazy"
-											allowfullscreen></iframe>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="videoGrid">
+							<div>
+								<h3>Winter / Fuyu</h3>
+								<iframe width="320" height="179" src="//www.youtube.com/embed/IT3KJ3CDKxs" loading="lazy" allowfullscreen></iframe>
+							</div>
+
+							<div>
+								<h3>Lente / Haru</h3>
+								<iframe width="320" height="179" src="//www.youtube.com/embed/zxWi7VjilxQ" loading="lazy" allowfullscreen></iframe>
+							</div>
+
+							<div>
+								<h3>Zomer / Natsu</h3>
+								<iframe width="320" height="179" src="//www.youtube.com/embed/xiTG1WpqLdc" loading="lazy" allowfullscreen></iframe>
+							</div>
+
+							<div>
+								<h3>Herfst / Aki</h3>
+								<iframe width="320" height="179" src="//www.youtube.com/embed/YpFp8NuXOdc" loading="lazy" allowfullscreen></iframe>
+							</div>
+						</div>
 					</div>
 
 					<div class="gridRow">
@@ -205,7 +194,7 @@ import Layout from '@/layouts/Layout.astro';
 									&#133;"</strong></p>
 						</div>
 					</div>
-				</article>
+				</main>
 
 			</div>
 		</div>

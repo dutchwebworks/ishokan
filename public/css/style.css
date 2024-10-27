@@ -300,6 +300,15 @@ td {
 
 /* 12 columns grid system
 ==================================== */
+
+.videoGrid {
+	display: grid;
+	gap: 22px;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* 12 columns grid system
+==================================== */
 .gridContainer_12 {
 	overflow: hidden;
 }
