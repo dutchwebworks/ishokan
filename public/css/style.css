@@ -307,6 +307,20 @@ td {
 	grid-template-columns: 1fr 1fr;
 }
 
+.old-banner {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background: #FFFFC5;
+	z-index: 9999;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
 /* 12 columns grid system
 ==================================== */
 .gridContainer_12 {
