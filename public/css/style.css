@@ -575,7 +575,8 @@ div.nav-menu>ul {
 	text-decoration: none;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover,
+.nav-menu li a.is-active {
 	color: #e46d0a;
 }
 
@@ -1495,6 +1496,7 @@ a {
 	color: black;
 }
 
+.footerWrapper nav a.is-active,
 .footerWrapper nav a:hover {
 	color: #e46d0a;
 }

@@ -1,5 +1,7 @@
 ---
-
+const pathname = new URL(Astro.request.url).pathname;
+const activeClassname = "is-active"
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <div class="footerWrapper">
@@ -9,17 +11,17 @@
 		<nav>
 			<ul>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
-						href="/aikido-in-hoofddorp-en-gouda">Aikido</a></li>
+						href="/aikido-in-hoofddorp-en-gouda" class={currentPath.startsWith('aikido') ? activeClassname : ""}>Aikido</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a
-						href="/kuydo">Kyudo</a></li>
+						href="/kyudo" class={currentPath.startsWith('kyudo') ? activeClassname : ""}>Kyudo</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a
-						href="/shinto-in-aikido">Shinto</a></li>
+						href="/shinto-in-aikido" class={currentPath.startsWith('shinto') ? activeClassname : ""}>Shinto</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a
-						href="/samurai-synergy">Samurai</a></li>
+						href="/samurai-synergy" class={currentPath.startsWith('samurai') ? activeClassname : ""}>Samurai</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a
-						href="/creations">Creations</a></li>
+						href="/creations" class={currentPath.startsWith('creations') ? activeClassname : ""}>Creations</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a
-						href="/hado">Hado</a></li>
+						href="/hado" class={currentPath.startsWith('hado') ? activeClassname : ""}>Hado</a></li>
 			</ul>
 		</nav>
 
