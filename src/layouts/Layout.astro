@@ -5,7 +5,7 @@ import Nav from "@/components/Nav.astro";
 import SiteIsOldBanner from "@/components/SiteIsOldBanner.astro";
 import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
 
-import { SITE_TITLE, AUTHOR } from '@/consts';
+import { SITE_TITLE, AUTHOR } from "@/consts";
 
 interface Props {
 	title: string;
@@ -21,47 +21,50 @@ const { title } = Astro.props;
 
 		<title>{SITE_TITLE} {title}</title>
 
-		<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-		
-		<link rel="preload" as="image" href="/img/floating-torii-website-header.png">
-		<link rel="preload" as="image" href="/img/rice-paper.jpg">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+		<link rel="preload" as="image" href="/img/floating-torii-website-header.png" />
+		<link rel="preload" as="image" href="/img/rice-paper.jpg" />
 
 		<meta name="generator" content={Astro.generator} />
-		
+
 		<meta name="author" content={AUTHOR} />
 
 		<meta name="description" content="" />
 
-		<meta name="copyright" content="&copy; Ishokan 2014" />
-		
+		<meta name="copyright" content="© Ishokan 2014" />
+
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lilita+One%7COpen+Sans%3A400%2C400italic%2C600&#038;ver=4.8.1' type='text/css' media='screen' />
+		<link
+			rel="stylesheet"
+			href="//fonts.googleapis.com/css?family=Lilita+One%7COpen+Sans%3A400%2C400italic%2C600&ver=4.8.1"
+			type="text/css"
+			media="screen"
+		/>
 
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
 
-		<script type='text/javascript' src='/js/libs/modernizr.js?ver=4.8.1'></script>
+		<script type="text/javascript" src="/js/libs/modernizr.js?ver=4.8.1"></script>
 	</head>
-	<body class="home page-template page-template-tpl-homepage page-template-tpl-homepage-php page page-id-156 ishokan-2">		
-			<Header />
+	<body class="home page-template page-template-tpl-homepage page-template-tpl-homepage-php page page-id-156 ishokan-2">
+		<Header />
 
-			<Nav />
+		<Nav />
 
-			<div class="mainContentWrapper">
-				<div class="mainContent siteWidth">
-					<slot />
-				</div>
+		<div class="mainContentWrapper">
+			<div class="mainContent siteWidth">
+				<slot />
 			</div>
+		</div>
 
-			<Footer />
+		<Footer />
 
-			<GoogleAnalytics />
+		<GoogleAnalytics />
 
-			<SiteIsOldBanner />
+		<SiteIsOldBanner />
 	</body>
 </html>
 
-<style is:global>
-
-</style>
+<style is:global></style>

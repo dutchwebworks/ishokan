@@ -1,6 +1,6 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
-const activeClassname = "is-active"
+const activeClassname = "is-active";
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
@@ -9,31 +9,31 @@ const currentPath = pathname.slice(1); // remove the first "/"
 		<div class="menu-mainleft-container">
 			<ul id="menu-mainleft" class="nav-menu">
 				<li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72">
-					<a href="/aikido-in-hoofddorp-en-gouda" class={currentPath.startsWith('aikido') ? activeClassname : ""}>Aikido</a>
+					<a href="/aikido-in-hoofddorp-en-gouda" class={currentPath.startsWith("aikido") ? activeClassname : ""}>Aikido</a>
 				</li>
-				<li id="menu-item-149"
-					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a
-						href="/kyudo" class={currentPath.startsWith('kyudo') ? activeClassname : ""}>Kyudo</a></li>
-				<li id="menu-item-148"
-					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a
-						href="/shinto-in-aikido" class={currentPath.startsWith('shinto') ? activeClassname : ""}>Shinto</a></li>
+				<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149">
+					<a href="/kyudo" class={currentPath.startsWith("kyudo") ? activeClassname : ""}>Kyudo</a>
+				</li>
+				<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148">
+					<a href="/shinto-in-aikido" class={currentPath.startsWith("shinto") ? activeClassname : ""}>Shinto</a>
+				</li>
 			</ul>
 		</div>
 		<a href="/" class="logo">
-			<img src="/img/ishokan-logo.png" loading="eager" fetchpriority="high" alt="Ishokan">
+			<img src="/img/ishokan-logo.png" loading="eager" fetchpriority="high" alt="Ishokan" />
 		</a>
 
 		<div class="menu-mainright-container">
 			<ul id="menu-mainright" class="nav-menu">
-				<li id="menu-item-174"
-					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a
-						href="/samurai-synergy" class={currentPath.startsWith('samurai') ? activeClassname : ""}>Samurai</a></li>
-				<li id="menu-item-173"
-					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a
-						href="/creations" class={currentPath.startsWith('creations') ? activeClassname : ""}>Creations</a></li>
-				<li id="menu-item-175"
-					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a
-						href="/hado" class={currentPath.startsWith('hado') ? activeClassname : ""}>Hado</a></li>
+				<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174">
+					<a href="/samurai-synergy" class={currentPath.startsWith("samurai") ? activeClassname : ""}>Samurai</a>
+				</li>
+				<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
+					<a href="/creations" class={currentPath.startsWith("creations") ? activeClassname : ""}>Creations</a>
+				</li>
+				<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
+					<a href="/hado" class={currentPath.startsWith("hado") ? activeClassname : ""}>Hado</a>
+				</li>
 			</ul>
 		</div>
 	</div>
